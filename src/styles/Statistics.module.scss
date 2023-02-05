@@ -1,0 +1,41 @@
+@import './variables';
+
+.statistics {
+  display: flex;
+  background-color: $light-gray;
+  justify-content: space-around;
+  &__left {
+    text-align: center;
+    &__img {
+      margin-top: 100px;
+    }
+    &__title {
+      font-family: 'Exo 2', sans-serif;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 48px;
+      line-height: 58px;
+      letter-spacing: 0.03em;
+      color: $black;
+      padding-top: 50px;
+    }
+    &__text {
+      font-family: 'Raleway', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 26px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      margin-top: 40px;
+      width: 594px;
+      margin-left: 100px;
+    }
+    &__button {
+      width: 800px;
+      padding-top: 50px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

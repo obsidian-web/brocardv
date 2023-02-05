@@ -1,0 +1,23 @@
+Важные замечания:
+1. передавать пропсы props, а не объектом
+2. Мы будем использовать БЭМ, прошу обращаться к классам через classes['<classname>'], при dot notation мы не сможем использовать тире
+
+Пример с bracket-notation:
+<div className={classes['Core']}>
+    <div className={classes['Core__object']}>
+        <div className={classes['Core__object-info']}>
+
+        </div>
+        <div className={classes['Core__object-tag']}>
+            <div className={classes['Core__object-tag-related']}>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+Пример c dot-notation
+<div className={classes.Core__object-info}> // js выдаст ошибку так как тире интерпретируется как минус
+
+3. более логично использовать слово classes вместо style в className, так как обращаемся к селектору Класса, а не к стилю
+4. Соблюдать табуляцию, в тч пробел после импортов

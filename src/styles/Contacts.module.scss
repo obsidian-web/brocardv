@@ -1,0 +1,98 @@
+@import './variables';
+
+.contacts {
+  height: 350px;
+  justify-content: center;
+  margin-bottom: 150px;
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  &__item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    &__address {
+      &__title {
+        padding-bottom: 40px;
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 44px;
+        /* identical to box height */
+      }
+      &__theAdress {
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 33px;
+        padding-bottom: 20px;
+        width: 300px;
+        display: flex;
+      }
+      &__clock {
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 33px;
+        display: flex;
+      }
+    }
+    &__phones {
+      &__title {
+        font-family: 'Open Sans', sans-serif;
+        padding-bottom: 40px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 44px;
+      }
+      &__phonesFirst {
+        display: flex;
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 33px;
+        padding-top: 20px;
+        text-transform: uppercase;
+        padding-bottom: 30px;
+      }
+      &__phonesSecond {
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 33px;
+        text-transform: uppercase;
+        display: flex;
+      }
+    }
+    &__smm {
+      &__title {
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 44px;
+        margin-top: 10px;
+      }
+      &__soc {
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 33px;
+        padding-bottom: 5px;
+        display: flex;
+      }
+    }
+  }
+  &__icon {
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+}

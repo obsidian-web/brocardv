@@ -1,0 +1,17 @@
+@import './variables';
+
+.map {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 140px;
+  &__item {
+    width: 1004px;
+    height: 539px;
+    background: $light-gray;
+    border-radius: 14px;
+    margin-top: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,23 @@
+@import '../variables';
+
+.UIButton{
+    background-color: $red;
+    padding: 10px 20px 10px 20px; // можно заменить на сокращенный вариант: padding: 10px 20px; но как больше нравится =)
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    color: $white;
+    border-radius: 14px;
+    transition: all ease 300ms;
+    cursor: pointer;
+    width: 60%;
+}
+.UIButton:hover{
+    background-color: $purple;
+}
+.UIButton:active{
+    background-color: $black
+}

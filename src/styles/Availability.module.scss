@@ -1,0 +1,104 @@
+@import './variables';
+
+.availability {
+  background-color: $light-gray;
+  padding-bottom: 200px;
+  &__pagination{
+    cursor: pointer;
+    float: right;
+    display: flex;
+    margin-right: 20px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    margin-top: 50px;
+    &__itemActive{
+      color: $red;
+      margin-right: 20px;
+    }
+    &__item{
+      color: $black;
+      margin-right: 20px;
+    }
+  }
+  &__title {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 0.03em;
+  }
+  &__drop {
+    display: flex;
+    &__down {
+      margin-left: 40px;
+      margin-top: 30px;
+    }
+  }
+  &__item {
+    &__block {
+      width: 1551px;
+      height: 198px;
+      margin-top: 80px;
+      margin-left: 40px;
+      background-color: $white;
+      display: flex;
+      &__info {
+        &__title {
+          &__price {
+            display: flex;
+            justify-content: space-between;
+            width: 1300px;
+            font-family: 'Libre Franklin', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 44px;
+            letter-spacing: 0.03em;
+            margin-left: 20px;
+            margin-top: 10px;
+          }
+        }
+        &__volume {
+          font-family: 'Raleway', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 23px;
+          letter-spacing: 0.03em;
+          color: $gray;
+          display: flex;
+          margin-left: 20px;
+          margin-top: 10px;
+        }
+        &__drive {
+          font-family: 'Raleway', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 23px;
+          letter-spacing: 0.03em;
+          color: $gray;
+          display: flex;
+          margin-left: 20px;
+          margin-top: 20px;
+        }
+        &__mileage {
+          font-family: 'Raleway', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 23px;
+          letter-spacing: 0.03em;
+          color: $gray;
+          display: flex;
+          margin-left: 20px;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

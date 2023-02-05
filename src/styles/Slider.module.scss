@@ -1,0 +1,79 @@
+@import './variables';
+.slider {
+  background-color: $light-gray;
+  &__title {
+    text-align: center;
+    padding: 50px;
+    font-family: 'Exo 2', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: 0.03em;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-around;
+    &__title {
+      font-family: 'Raleway', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.03em;
+      padding-left: 20px;
+      padding-top: 40px;
+    }
+    &__text {
+      font-family: 'Raleway', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 26px;
+      letter-spacing: 0.03em;
+      color: $gray;
+    }
+    &__imgTitle {
+      display: flex;
+      padding-bottom: 40px;
+      padding-top: 40px;
+    }
+    &__img {
+      &__sliderTruck {
+        position: absolute;
+        z-index: 1;
+        transform: translateX(-165px) translateY(20px);
+      }
+      &__sliderCircle {
+      }
+    }
+    &__left {
+      width: 400px;
+    }
+    &__right {
+      width: 400px;
+    }
+  }
+  &__sliderButton {
+    width: 700px;
+    text-align: center;
+    margin-left: 580px;
+    margin-top: 100px;
+    padding-bottom: 40px;
+  }
+  &__page {
+    display: flex;
+    float: right;
+    padding-right: 20px;
+    transform: translateY(-70px);
+    font-size: 20px;
+    &__arrow {
+      font-size: 25px;
+      transition: all ease 300ms;
+      cursor: pointer;
+    }
+    &__arrow:hover {
+      color: $red;
+    }
+  }
+}
