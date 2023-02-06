@@ -13,7 +13,7 @@ const Stages = () => {
         <div className={classes['stages__items']}>
           <div className={classes['stages__numbersBlock']}>
             <div className={classes['stages__numbersBlock__number']}>
-              <img src="01.png" alt="01" />
+              <div className={classes['stages__numbersBlock__number__numb']}>01</div>
             </div>
             <div className={classes['stages__numbersBlock__circle']}></div>
             <div className={classes['stages__numbersBlock__text']}>
@@ -22,7 +22,7 @@ const Stages = () => {
           </div>
           <div className={classes['stages__numbersBlock']}>
             <div className={classes['stages__numbersBlock__number']}>
-              <img src="02.png" alt="02" />
+            <div className={classes['stages__numbersBlock__number__numb']}>02</div>
             </div>
             <div className={classes['stages__numbersBlock__circle']}></div>
             <div className={classes['stages__numbersBlock__text']}>
@@ -31,7 +31,7 @@ const Stages = () => {
           </div>
           <div className={classes['stages__numbersBlock']}>
             <div className={classes['stages__numbersBlock__number']}>
-              <img src="03.png" alt="03" />
+            <div className={classes['stages__numbersBlock__number__numb']}>03</div>
             </div>
             <div className={classes['stages__numbersBlock__circle']}></div>
             <div className={classes['stages__numbersBlock__text']}>
@@ -40,7 +40,7 @@ const Stages = () => {
           </div>
           <div className={classes['stages__numbersBlock']}>
             <div className={classes['stages__numbersBlock__number']}>
-              <img src="04.png" alt="04" />
+            <div className={classes['stages__numbersBlock__number__numb']}>04</div>
             </div>
             <div className={classes['stages__numbersBlock__circle']}></div>
             <div className={classes['stages__numbersBlock__text']}>

@@ -5,9 +5,19 @@ import classes from '../styles/Header/Header.module.scss';
 import Layout from '../hoc/Layout';
 import MobileNav from "./mobileNav";
 import useWindowSize from "../hooks/useWindowSize";
+import useLockedBody from '../hooks/useLockedBody';
+
+
 
 const Header = (props: any) => {
-  const [mobileNav, setMobileNav] = useState<boolean>(false)
+ const [mobileNav, setMobileNav] = useLockedBody(false)
+
+
+  const mobileNavHandle = ()=>{
+    setMobileNav(true)
+    
+  }
+
   const scrollingMine = ()=>{
     const element = props.mainRef;
     element.current.scrollIntoView({
@@ -108,7 +118,7 @@ const Header = (props: any) => {
               {/*</Link>*/}
               <div className={classes['menu__main__mobile']}
                   // onClick={scrollingMaps}
-                   onClick={() => setMobileNav(true)}
+                   onClick={() => mobileNavHandle()}
               >
                 <FaBars className={classes['menu__main__mobile__faBars']}/>
               </div>

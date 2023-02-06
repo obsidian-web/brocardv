@@ -146,7 +146,7 @@ const MobileNav = ({
             </div>
           </motion.div>
         </motion.div>
-      )}
+      ) }
     </AnimatePresence>
   );
 };

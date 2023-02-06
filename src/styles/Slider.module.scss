@@ -37,14 +37,26 @@
       display: flex;
       padding-bottom: 40px;
       padding-top: 40px;
+      &__numb {
+        font-family: 'Libre Franklin', sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 102px;
+        line-height: 124px;
+        letter-spacing: 0.03em;
+        font-size: 120px;
+        color: $light-gray;
+        text-shadow: 2px 0 2px $red, 0 2px 2px $red, -2px 0 2px $red, 0 -2px 2px $red;
+      }
     }
     &__img {
       &__sliderTruck {
         position: absolute;
         z-index: 1;
-        transform: translateX(-165px) translateY(20px);
+        transform: translateX(-165px) translateY(170px);
       }
       &__sliderCircle {
+        transform: translateY(150px);
       }
     }
     &__left {
