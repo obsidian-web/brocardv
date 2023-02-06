@@ -1,9 +1,11 @@
 @import './variables';
 
 .statistics {
+  
   display: flex;
   background-color: $light-gray;
   justify-content: space-around;
+  
   &__left {
     text-align: center;
     &__img {

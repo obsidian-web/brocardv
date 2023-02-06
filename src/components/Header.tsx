@@ -96,15 +96,21 @@ const Header = (props: any) => {
                   Контакты
                 </Link>
               </div>
+              <div className={classes['menu__main']} onClick={scrollingMaps}>
+                <Link className={classes['menu__link']} to="/">
+                  Команда
+                </Link>
+              </div>
+              
 
               {/*<Link className={classes['menu__link']} to="/">*/}
               {/*  Команда*/}
               {/*</Link>*/}
-              <div className={classes['menu__main']}
+              <div className={classes['menu__main__mobile']}
                   // onClick={scrollingMaps}
                    onClick={() => setMobileNav(true)}
               >
-                <FaBars/>
+                <FaBars className={classes['menu__main__mobile__faBars']}/>
               </div>
             </div>
             <div className={classes['number']}>
@@ -117,7 +123,7 @@ const Header = (props: any) => {
             </div>
           </div>
         </Layout>
-        <MobileNav setMobileNav={setMobileNav} mobileNav={mobileNav}/>
+        <MobileNav setMobileNav={setMobileNav} mobileNav={mobileNav} mainRef={props.mainRef} catalogRef={props.catalogRef} staticRef={props.staticRef} auctionRef={props.auctionRef} contactRef={props.contactRef} comandRef={props.comandRef}/>
       </>
   );
 };

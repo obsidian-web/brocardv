@@ -1,8 +1,5 @@
 import { useState, useRef} from 'react';
 import Header from './components/Header';
-import UIButton from './UIKIT/UIButton';
-import UIDropDown from './UIKIT/UIDropDown';
-import UIInput from './UIKIT/UIInput';
 import Main from './components/Main';
 import BrocardvLine from './components/BrocardvLine';
 import Slider from './components/Slider/Slider';

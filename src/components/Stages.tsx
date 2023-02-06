@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Layout from '../hoc/Layout';
 import classes from '../styles/Stages.module.scss';
 import { FaStar } from 'react-icons/fa';
+import newSupra from '../assets/newSupra.png'
 
 const Stages = () => {
   const [star, setStar] = useState(false);
@@ -69,7 +70,7 @@ const Stages = () => {
             </div>
           </div>
           <div className={classes['stages__cardsBlock__img']}>
-            <img src="supra.png" alt="supra" />
+            <img src="newSupra.png" alt="supra" />
           </div>
           <div className={classes['stages__cardsBlock__right']}>
             <div className={classes['stages__cardsBlock__right__title']}>Кричащий заголовок</div>

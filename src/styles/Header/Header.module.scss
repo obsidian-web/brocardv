@@ -2,6 +2,7 @@
 
 .header{
     position: fixed;
+    z-index: 2;
     //width: 1950px;
     height: 102px;
     display: flex;
@@ -46,9 +47,9 @@
 .menu{
     display: flex;
     position: absolute;
-    width: 99px;
+    width: 500px;
     height: 29px;
-    left: 450px;
+    left: 380px;
     top: 37px;
     font-family: 'Libre Franklin', sans-serif;
     font-style: normal;
@@ -56,10 +57,19 @@
     font-size: 24px;
     line-height: 29px;
     letter-spacing: 0.03em;
+    &__main{
+        
+        &__mobile{
+         cursor: pointer;
+         &__faBars{
+            
+         }   
+        }
+    }
 }
 .menu__link{
     text-decoration: none;
-    margin-right: 30px;
+    margin-right: 10px;
     color: $black;
 }
 .number{

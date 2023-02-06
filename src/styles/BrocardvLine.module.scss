@@ -1,8 +1,9 @@
 @import './variables';
 .brocardvLine {
   font-size: 20px;
-  height: 50px;
-  background: linear-gradient(-270deg, #d91b25 0%, #502c64 99.99%);
+  height: 7vh;
+  width: 114.57vw;
+  background-size: cover;
   &__info {
     display: flex;
     justify-content: space-between;
