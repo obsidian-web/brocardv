@@ -6,8 +6,12 @@ import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md';
 import { RxSlash } from 'react-icons/rx';
 import { AnimatePresence, useAnimation, motion, transform } from 'framer-motion';
 import { SliderData } from './sliderData';
+import SendApplication from '../SendApplication';
+
+
 
 const Slider = (props: any) => {
+  const [send, setSend] = useState<boolean>(false)
   const [index, setIndex] = useState<number>(0);
   const controls = useAnimation();
   const transformer = transform([0, 100], [0, 360]);
@@ -37,6 +41,7 @@ const Slider = (props: any) => {
     <AnimatePresence>
       <Layout>
         <div className={classes['slider']} ref={props.catalogRef}>
+        <SendApplication send={send} setSend={setSend}/>
           <motion.div
             className={classes['slider__title']}
             key={index}
@@ -123,7 +128,7 @@ const Slider = (props: any) => {
               </motion.div>
             </div>
           </div>
-          <div className={classes['slider__sliderButton']}>
+          <div className={classes['slider__sliderButton']} onClick={()=>setSend(true)}>
             <UIButton buttonText={'Отправить заявку'} />
           </div>
           <div className={classes['slider__page']}>
@@ -138,10 +143,12 @@ const Slider = (props: any) => {
             <div className={classes['slider__page__arrow']}>
               <MdKeyboardArrowRight />
             </div>
-          </div>
+          </div>          
+          
         </div>
       </Layout>
     </AnimatePresence>
+    
   );
 };
 

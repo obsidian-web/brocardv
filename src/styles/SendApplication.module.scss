@@ -1,0 +1,74 @@
+@import '../styles/variables';
+
+.sendApplication {
+  display: flex;
+  z-index: 100;
+  justify-content: center;
+  border: 1px solid black;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 200;
+  position: absolute;
+  bottom: 0;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  &__item {
+    width: 719px;
+    height: 725px;
+    background-color: $white;
+    border-radius: 14px;
+    &__icon {
+      text-align: end;
+      font-size: 40px;
+      padding-top: 10px;
+      padding-right: 10px;
+      cursor: pointer;
+      transition: all ease 300ms;
+    }
+    
+    &__info {
+      text-align: center;
+      &__title {
+        font-family: 'Libre Franklin', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+      }
+      &__subTitle {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $gray;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      &__UIBlock {
+        padding-left: 190px;
+        padding-top: 20px;
+        &__input {
+          padding-top: 20px;
+        }
+      }
+      &__textarea {
+        margin-top: 20px;
+        width: 326px;
+        height: 116px;
+        background: #ffffff;
+        border: 2px solid #7b7b7b;
+        border-radius: 15px;
+        box-sizing: border-box;
+        font-size: 20px;
+      }
+      &__button {
+        margin-left: 200px;
+        padding-top: 20px;
+      }
+    }
+  }
+}

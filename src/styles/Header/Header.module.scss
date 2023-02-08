@@ -2,7 +2,7 @@
 
 .header{
     position: fixed;
-    z-index: 2;
+    z-index: 201;
     //width: 1950px;
     height: 102px;
     display: flex;
@@ -61,7 +61,7 @@
         
         &__mobile{
          cursor: pointer;
-         display: none;
+         
          &__faBars{
             
          }   

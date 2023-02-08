@@ -1,6 +1,7 @@
 @import './variables';
 .slider {
   background-color: $light-gray;
+  position: relative;
   &__title {
     text-align: center;
     padding: 50px;
