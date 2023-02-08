@@ -4,7 +4,9 @@ import classes from '../styles/BrocardvLine.module.scss';
 import rectangle from '../assets/Rectangle.png'
 const BrocardvLine = () => {
   return (
-      <div className={classes['brocardvLine']} style={{backgroundImage: `url(${rectangle})`}}>
+      <div className={classes['brocardvLine']}
+           style={{backgroundImage: `url(${rectangle})`}}
+      >
         <Layout>
         <div className={classes['brocardvLine__info']}>
           <div className={classes['brocardvLine__info__logo']}>BROCARDV</div>

@@ -91,8 +91,10 @@ const MobileNav = ({
             animate={'visible'}
             exit={'hidden'}
             variants={navAnimation}>
-            <div onClick={() => setMobileNav(false)} className={classes['MobileNav__iconsBlock']}>
-              <RxCross1 className={classes['MobileNav__iconsBlock__icon']} />
+            <div  className={classes['MobileNav__iconsBlock']}>
+              <RxCross1 className={classes['MobileNav__iconsBlock__icon']}
+                        onClick={() => setMobileNav(false)}
+              />
             </div>
             <div className={classes['MobileNav__content__item']}>
               <div className={classes['MobileNav__content__item__menu']}>

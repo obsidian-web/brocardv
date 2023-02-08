@@ -7,7 +7,7 @@
   top: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 9;
+  z-index: 1000;
   
   &__content {
     width: 700px;
@@ -73,13 +73,13 @@
     display: flex;
     justify-content: right;
     font-size: 50px;
-    cursor: pointer;
     border-top: 1px solid $gray;
     padding-bottom: 20px;
     &__icon {
       margin-top: 20px;
       margin-right: 36px;
       transition: all ease 300ms;
+      cursor: pointer;
     }
     &__icon:hover {
       transform: rotate(90deg);

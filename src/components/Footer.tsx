@@ -54,61 +54,63 @@ const Footer = (props: any) => {
       inline: "start"
     })
   }
-  
+
   return (
-    <Layout>
+
       <div className={classes['footer']}>
-        <div className={classes['footer__item']}>
-          <div className={classes['footer__item__logo']}>
-            <div className={classes['footer__item__logo__title']}>BROCARDV</div>
-            <div className={classes['footer__item__logo__subTitle']}>
-              Автомобили <br />
-              под заказ
+        <Layout>
+          <div className={classes['footer__item']}>
+            <div className={classes['footer__item__logo']}>
+              <div className={classes['footer__item__logo__title']}>BROCARDV</div>
+              <div className={classes['footer__item__logo__subTitle']}>
+                Автомобили <br />
+                под заказ
+              </div>
+            </div>
+            <div className={classes['footer__item__menu']}>
+              <div className={classes['footer__item__menu__main']} onClick={scrollingMine}>
+                <Link className={classes['footer__item__menu__main__link']} to="/">
+                  Главная
+                </Link>
+              </div>
+              <div className={classes['footer__item__menu__main']} onClick={scrollingSlider}>
+                <Link className={classes['footer__item__menu__main__link']} to="/">
+                  Каталог
+                </Link>
+              </div>
+              <div className={classes['footer__item__menu__main']} onClick={scrollingStatistic}>
+                <Link className={classes['footer__item__menu__main__link']} to="/">
+                  Статистика
+                </Link>
+              </div>
+              <div className={classes['footer__item__menu__main']} onClick={scrollingAuction}>
+                <Link className={classes['footer__item__menu__main__link']} to="/">
+                  Аукционы
+                </Link>
+              </div>
+              <div className={classes['footer__item__menu__main']} onClick={scrollingContact}>
+                <Link className={classes['footer__item__menu__main__link']} to="/">
+                  Контакты
+                </Link>
+              </div>
+              <div className={classes['footer__item__menu__main']} onClick={scrollingMaps}>
+                <Link className={classes['footer__item__menu__main__link']} to="/">
+                  Команда
+                </Link>
+              </div>
+            </div>
+            <div className={classes['footer__item__phone']}>
+              <FaPhoneAlt className={classes['footer__item__phone__icon']} />
+              <div className={classes['footer__item__phone__number']}>
+                <Link className={classes['footer__item__menu__main__link']} to="/">
+                  +7 (992) 444-44-46
+                </Link>
+              </div>
             </div>
           </div>
-          <div className={classes['footer__item__menu']}>
-            <div className={classes['footer__item__menu__main']} onClick={scrollingMine}>
-              <Link className={classes['footer__item__menu__main__link']} to="/">
-                Главная
-              </Link>
-            </div>
-            <div className={classes['footer__item__menu__main']} onClick={scrollingSlider}>
-              <Link className={classes['footer__item__menu__main__link']} to="/">
-                Каталог
-              </Link>
-            </div>
-            <div className={classes['footer__item__menu__main']} onClick={scrollingStatistic}>
-              <Link className={classes['footer__item__menu__main__link']} to="/">
-                Статистика
-              </Link>
-            </div>
-            <div className={classes['footer__item__menu__main']} onClick={scrollingAuction}>
-              <Link className={classes['footer__item__menu__main__link']} to="/">
-                Аукционы
-              </Link>
-            </div>
-            <div className={classes['footer__item__menu__main']} onClick={scrollingContact}>
-              <Link className={classes['footer__item__menu__main__link']} to="/">
-                Контакты
-              </Link>
-            </div>
-            <div className={classes['footer__item__menu__main']} onClick={scrollingMaps}>
-              <Link className={classes['footer__item__menu__main__link']} to="/">
-                Команда
-              </Link>
-            </div>
-          </div>
-          <div className={classes['footer__item__phone']}>
-            <FaPhoneAlt className={classes['footer__item__phone__icon']} />
-            <div className={classes['footer__item__phone__number']}>
-              <Link className={classes['footer__item__menu__main__link']} to="/">
-                +7 (992) 444-44-46
-              </Link>
-            </div>
-          </div>
-        </div>
+        </Layout>
       </div>
-    </Layout>
+
   );
 };
 

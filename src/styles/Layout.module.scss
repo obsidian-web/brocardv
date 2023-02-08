@@ -2,3 +2,10 @@
   width: 1650px;
   margin: 0 auto;
 }
+
+@media (max-width: 1650px) {
+  .Layout{
+    width: unset;
+    padding: 0 calc(20px + (100 - 20) * ((100vw - 320px) / (1650 - 320)));
+  }
+}

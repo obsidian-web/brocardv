@@ -1,17 +1,16 @@
 @import '../styles/variables';
 
 .sendApplication {
+  position: fixed;
   display: flex;
-  z-index: 100;
   justify-content: center;
+  align-items: center;
   border: 1px solid black;
   top: 0;
   right: 0;
   left: 0;
   z-index: 200;
-  position: absolute;
   bottom: 0;
-  align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
   &__item {
     width: 719px;
@@ -37,7 +36,7 @@
         line-height: 48px;
       }
       &__subTitle {
-        font-family: 'Raleway';
+        font-family: 'Raleway', sans-serif;
         font-style: normal;
         font-weight: 600;
         font-size: 22px;
@@ -64,6 +63,7 @@
         border-radius: 15px;
         box-sizing: border-box;
         font-size: 20px;
+        resize: none;
       }
       &__button {
         margin-left: 200px;
