@@ -5,8 +5,7 @@ import { RxCross1 } from 'react-icons/rx';
 import UIInput from '../UIKIT/UIInput';
 import UIButton from '../UIKIT/UIButton';
 import { AnimatePresence, motion } from 'framer-motion';
-
-
+import { backdropAnimation } from '../animations/animations';
 
 const SendApplication = ({ send, setSend }: { send: boolean; setSend: (i: boolean) => void }) => {
   const [name, setName] = useState<any>();
@@ -17,9 +16,14 @@ const SendApplication = ({ send, setSend }: { send: boolean; setSend: (i: boolea
   return (
     <AnimatePresence initial={false}>
       {send && (
-        <div className={classes['sendApplication']}>
+        <motion.div
+          className={classes['sendApplication']}
+          initial={'hidden'}
+          animate={'visible'}
+          exit={'hidden'}
+          variants={backdropAnimation}>
           <div className={classes['sendApplication__item']}>
-            <div className={classes['sendApplication__item__icon']} onClick={()=>setSend(false)}>
+            <div className={classes['sendApplication__item__icon']} onClick={() => setSend(false)}>
               <RxCross1 />
             </div>
             <div className={classes['sendApplication__item__info']}>
@@ -63,7 +67,7 @@ const SendApplication = ({ send, setSend }: { send: boolean; setSend: (i: boolea
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       )}
     </AnimatePresence>
   );
