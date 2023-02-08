@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import Layout from '../../hoc/Layout';
 import classes from '../../styles/Slider.module.scss';
 import UIButton from '../../UIKIT/UIButton';
@@ -20,14 +20,14 @@ const Slider = (props: any) => {
     (() =>
       setTimeout(() => {
         setIndex(index + 1);
-      }, 2000))();
+      }, 10000))();
   }
 
   useEffect(() => {
     if (index === SliderData.length - 1) {
       setTimeout(() => {
         setIndex(0);
-      }, 2000);
+      }, 10000);
     }
 
     controls.start({
@@ -37,10 +37,29 @@ const Slider = (props: any) => {
     });
   }, [index]);
 
+  const sendRef = useRef<HTMLInputElement>(null)
+
+  const clickRight = ()=>{
+    setIndex(index + 1)
+    if(index === SliderData.length - 1){
+      setIndex(0)
+    }
+  }
+  const clickLeft = ()=>{
+    setIndex(index - 1)
+    if(index === SliderData.length - 3){
+      setIndex(2)
+    }
+  }
+
+  
+
+
+  
   return (
     <AnimatePresence>
       <Layout>
-        <div className={classes['slider']} ref={props.catalogRef}>
+        <div className={classes['slider']} >
         <SendApplication send={send} setSend={setSend}/>
           <motion.div
             className={classes['slider__title']}
@@ -132,7 +151,7 @@ const Slider = (props: any) => {
             <UIButton buttonText={'Отправить заявку'} />
           </div>
           <div className={classes['slider__page']}>
-            <div className={classes['slider__page__arrow']}>
+            <div className={classes['slider__page__arrow']} onClick={clickLeft}>
               <MdKeyboardArrowLeft />
             </div>
             <div className={classes['slider__page__number']}>01</div>
@@ -140,7 +159,7 @@ const Slider = (props: any) => {
               <RxSlash />
             </div>
             <div className={classes['slider__page__number']}>03</div>
-            <div className={classes['slider__page__arrow']}>
+            <div className={classes['slider__page__arrow']} onClick={clickRight}>
               <MdKeyboardArrowRight />
             </div>
           </div>          

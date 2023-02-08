@@ -7,7 +7,7 @@ import UIButton from '../UIKIT/UIButton';
 import { AnimatePresence, motion } from 'framer-motion';
 import { backdropAnimation } from '../animations/animations';
 
-const SendApplication = ({ send, setSend }: { send: boolean; setSend: (i: boolean) => void }) => {
+const SendApplication = ({ send, setSend,  }: { send: boolean; setSend: (i: boolean) => void  }) => {
   const [name, setName] = useState<any>();
   const [phone, setPhone] = useState<any>();
   const [theme, setTheme] = useState<any>();
@@ -16,7 +16,7 @@ const SendApplication = ({ send, setSend }: { send: boolean; setSend: (i: boolea
   return (
     <AnimatePresence initial={false}>
       {send && (
-        <motion.div
+        <motion.div 
           className={classes['sendApplication']}
           initial={'hidden'}
           animate={'visible'}
