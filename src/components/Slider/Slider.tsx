@@ -138,7 +138,7 @@ const Slider = (props: any) => {
                   <div className={classes['slider__item__imgTitle__numb']}>04</div>
                   <motion.div
                       className={classes['slider__item__title']}
-                      key={index}
+                      key={Math.random()}
                       exit={{ opacity: 0, scale: 0.5 }}
                       animate={controls}
                       initial={{ opacity: 0, scale: 0.5 }}>
@@ -147,7 +147,7 @@ const Slider = (props: any) => {
                 </div>
                 <motion.div
                     className={classes['slider__item__text']}
-                    key={index}
+                    key={Math.random()}
                     exit={{ opacity: 0, scale: 0.5 }}
                     animate={controls}
                     initial={{ opacity: 0, scale: 0.5 }}>
