@@ -14,6 +14,9 @@
     transition: all ease 300ms;
     cursor: pointer;
     width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .UIButton:hover{
     background-color: $purple;

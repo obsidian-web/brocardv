@@ -24,7 +24,7 @@ const Statistics = (props: any) => {
             </div>
           </div>
           <div className={classes['statistics__right']}>
-            <img width="650" height="650" src="gtr.png" alt="gtr" />
+            <img src="gtr.png" alt="gtr" />
           </div>
         </div>
       </div>
