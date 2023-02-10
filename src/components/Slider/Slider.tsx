@@ -146,7 +146,7 @@ const Slider = (props: any) => {
                   </motion.div>
                 </div>
                 <motion.div
-                    className={classes['slider__item__text']}
+                    className={classes['slider__item__text__final']}
                     key={Math.random()}
                     exit={{ opacity: 0, scale: 0.5 }}
                     animate={controls}

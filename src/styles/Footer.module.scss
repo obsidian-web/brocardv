@@ -71,3 +71,14 @@
     }
   }
 }
+@media (max-width: 1024px){
+  .footer{
+    width: calc(900px + (600 - 400) * ((100vw - 320px) / (1500 - 320)));
+    height: calc(10px + (750 - 375) * ((100vw - 320px) / (1500 - 320)));
+    &__item{
+      &__menu {
+        display: none;
+      }
+    }
+  }
+}

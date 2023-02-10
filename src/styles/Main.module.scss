@@ -43,3 +43,8 @@
     }
   }
 }
+@media (max-width: 1024px){
+  .main{
+    height: calc(575px + (750 - 375) * ((100vw - 320px) / (1500 - 320)));
+  }
+}

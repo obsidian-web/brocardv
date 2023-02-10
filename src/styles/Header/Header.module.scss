@@ -10,7 +10,6 @@
   background-color: #fff;
   left: 0;
   right: 0;
-  
 }
 .logo {
   display: flex;
@@ -57,6 +56,7 @@
   &__main {
     &__mobile {
       cursor: pointer;
+      display: none;
       &__faBars {
       }
     }
@@ -86,5 +86,27 @@
     font-weight: 400;
     font-size: 22px;
     letter-spacing: 0.03em;
+  }
+}
+@media (max-width: 1024px) {
+  .header {
+    width: calc(905px + (600 - 400) * ((100vw - 320px) / (1500 - 320)));
+    height: calc(10px + (750 - 375) * ((60vw - 320px) / (1500 - 320)));
+  }
+  .logo {
+  }
+  .menu {
+    display: none;
+    &__main {
+      &__mobile {
+        cursor: pointer;
+        display: block;
+
+        &__faBars {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
   }
 }

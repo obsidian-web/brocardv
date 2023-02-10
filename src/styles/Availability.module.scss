@@ -107,3 +107,11 @@
     }
   }
 }
+
+@media (max-width: 1024px){
+  .availability {
+    &__drop {
+      display: block;
+    }
+  }
+}

@@ -2,7 +2,6 @@
 .slider {
   background-color: $light-gray;
   position: relative;
-  border: 1px solid black;
   &__title {
     text-align: center;
     padding: 50px;
@@ -91,8 +90,25 @@
       color: $red;
     }
   }
-  &__button{
+  &__button {
     display: flex;
     justify-content: center;
+  }
+}
+@media (max-width: 1024px) {
+  .slider {
+    width: calc(905px + (600 - 400) * ((100vw - 320px) / (1500 - 320)));
+    &__item {
+      display: block;
+      &__img {
+        height: 1px;
+        &__sliderTruck {
+          transform: translateX(400px);
+        }
+        &__sliderCircle {
+          transform: translateX(570px) translateY(-30px);
+        }
+      }
+    }
   }
 }

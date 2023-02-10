@@ -53,3 +53,37 @@
     justify-content: center;
   }
 }
+@media (max-width: 1024px) {
+  .statistics{
+    height: calc(575px + (750 - 375) * ((100vw - 320px) / (1500 - 320)));
+    &__item{
+      display: block;
+      
+      
+    }
+    &__left{
+     background-color: transparent;
+     &__img{
+      z-index: 1;
+      transform: translateY(100px);
+     }
+     &__title{
+      z-index: 1;
+      color: $white;
+      transform: translateY(100px);
+     }
+     &__button{
+      z-index: 1;
+      transform: translateY(100px);
+     }
+     &__text{
+      z-index: 1;
+      color: $white;
+      transform: translateY(100px);
+     }
+    }
+    &__right{
+      transform: translateY(-610px);
+    }
+  }
+}
