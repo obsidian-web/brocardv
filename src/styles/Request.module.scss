@@ -4,6 +4,12 @@
   height: 450px;
   text-align: center;
   background-color: $light-gray;
+  width: 100vw;
+  background-size: cover;
+  &__item{
+    display: flex;
+    justify-content: center;
+  }
   &__title {
     font-family: 'Exo 2', sans-serif;
     font-style: normal;
@@ -24,12 +30,13 @@
     color: $gray;
     margin-top: 30px;
   }
+  
   &__inputBlock {
     border: 1px solid black;
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    margin-left: 450px;
+    
     align-items: center;
     box-sizing: border-box;
     width: 739px;
@@ -43,8 +50,11 @@
   &__buttonBlock {
     display: flex;
     justify-content: center;
-    margin-left: 600px;
     width: 400px;
     margin-top: 30px;
+  }
+  &__button{
+    display: flex;
+    justify-content: center;
   }
 }

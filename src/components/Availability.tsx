@@ -3,8 +3,8 @@ import Layout from '../hoc/Layout';
 import classes from '../styles/Availability.module.scss';
 import UIDropDown from '../UIKIT/UIDropDown';
 
-const Availability = (props:any) => {
-  const pag = [1, 2, 3, 4, 5]
+const Availability = (props: any) => {
+  const pag = [1, 2, 3, 4, 5];
   const dataCar = [
     {
       brand: 'Nissan',
@@ -62,11 +62,11 @@ const Availability = (props:any) => {
     },
   ];
   const steeringWheel = ['Правый', 'Левый'];
-  const [pagin, setPagin] = useState<any>()
+  const [pagin, setPagin] = useState<any>();
   const [selectedCar, setSelectedCar] = useState<string>('');
   return (
-    <Layout>
-      <div className={classes['availability']} ref={props.auctionRef}>
+    <div className={classes['availability']} ref={props.auctionRef}>
+      <Layout>
         <div className={classes['availability__title']}>Автомобили в наличии</div>
         <div className={classes['availability__drop']}>
           <div className={classes['availability__drop__down']}>
@@ -120,17 +120,20 @@ const Availability = (props:any) => {
           ))}
         </div>
         <div className={classes['availability__pagination']}>
-          {pag.map((item, index)=> <div onClick={()=>setPagin(index)}  className={
+          {pag.map((item, index) => (
+            <div
+              onClick={() => setPagin(index)}
+              className={
                 index === pagin
                   ? classes['availability__pagination__itemActive']
                   : classes['availability__pagination__item']
               }>
               {item}
-
-          </div>)}
+            </div>
+          ))}
         </div>
-      </div>
-    </Layout>
+      </Layout>
+    </div>
   );
 };
 

@@ -1,27 +1,29 @@
 @import './variables';
 
 .stages {
+  border: 1px solid black;
+  width: 100vw;
+  background-size: cover;
+  
   &__title {
     padding-top: 100px;
     padding-bottom: 100px;
-    padding-left: 80px;
     font-family: 'Exo 2', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
     line-height: 58px;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.03em; 
   }
-
   &__items {
     display: flex;
-    margin-left: 70px;
   }
   &__numbersBlock {
     &__number {
       border-bottom: 1px solid $gray;
-      width: 370px;
+      width: 290px;
       margin-left: 20px;
+        
       &__numb {
         font-family: 'Libre Franklin', sans-serif;
         font-style: normal;
@@ -32,6 +34,7 @@
         font-size: 120px;
         color: $white;
         text-shadow: 2px 0 2px $red, 0 2px 2px $red, -2px 0 2px $red, 0 -2px 2px $red;
+        
       }
     }
     &__circle {
@@ -40,6 +43,7 @@
       border-radius: 50%;
       height: 30px;
       width: 30px;
+      
     }
     &__text {
       font-family: 'Raleway', sans-serif;
@@ -50,7 +54,9 @@
       letter-spacing: 0.03em;
       columns: $black;
       padding-top: 30px;
-      width: 350px;
+      width: 270px;
+    
+
     }
   }
   &__cardsBlock {
@@ -58,8 +64,10 @@
     padding-top: 100px;
     justify-content: space-around;
     padding-bottom: 200px;
+    
+    
     &__left {
-      width: 736px;
+      width: 600px;
       height: 356px;
       background-color: $light-gray;
       border-radius: 50px;
@@ -79,7 +87,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: 550px;
+        margin-left: 410px;
         transform: translateY(-25px);
         &__title {
           color: $white;
@@ -105,6 +113,7 @@
         line-height: 38px;
         letter-spacing: 0.03em;
         padding-left: 40px;
+        
       }
       &__text {
         font-family: 'Raleway', sans-serif;
@@ -119,7 +128,7 @@
       }
     }
     &__right {
-      width: 736px;
+      width: 600px;
       height: 356px;
       &__infoBlock {
         display: flex;

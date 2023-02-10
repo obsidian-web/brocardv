@@ -2,6 +2,7 @@
 .slider {
   background-color: $light-gray;
   position: relative;
+  border: 1px solid black;
   &__title {
     text-align: center;
     padding: 50px;
@@ -70,7 +71,8 @@
   &__sliderButton {
     width: 700px;
     text-align: center;
-    margin-left: 580px;
+    display: flex;
+    justify-content: center;
     margin-top: 100px;
     padding-bottom: 40px;
   }
@@ -88,5 +90,9 @@
     &__arrow:hover {
       color: $red;
     }
+  }
+  &__button{
+    display: flex;
+    justify-content: center;
   }
 }

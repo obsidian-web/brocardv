@@ -11,11 +11,11 @@ import { HiOutlineMail } from 'react-icons/hi';
 
 const Сontacts = (props: any) => {
   return (
-    <Layout>
-      <div className={classes['contacts']} ref={props.contactRef}>
+    <div className={classes['contacts']} ref={props.contactRef}>
+      <Layout>
         <div className={classes['contacts__item']}>
           <div className={classes['contacts__item__img']}>
-            <img src="logoSmm.png" alt='logo'/>
+            <img src="logoSmm.png" alt="logo" />
           </div>
           <div className={classes['contacts__item__address']}>
             <div className={classes['contacts__item__address__title']}>Адрес:</div>
@@ -75,8 +75,8 @@ const Сontacts = (props: any) => {
             </div>
           </div>
         </div>
-      </div>
-    </Layout>
+      </Layout>
+    </div>
   );
 };
 

@@ -7,8 +7,9 @@ import newSupra from '../assets/newSupra.png'
 const Stages = () => {
   const [star, setStar] = useState(false);
   return (
-    <Layout>
+    
       <div className={classes['stages']}>
+        <Layout>
         <div className={classes['stages__title']}>Комфортное сотрудничество</div>
         <div className={classes['stages__items']}>
           <div className={classes['stages__numbersBlock']}>
@@ -84,8 +85,9 @@ const Stages = () => {
             </div>
           </div>
         </div>
+        </Layout>
       </div>
-    </Layout>
+    
   );
 };
 

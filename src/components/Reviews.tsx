@@ -39,8 +39,8 @@ const Reviews = () => {
   };
   console.log(pagin);
   return (
-    <Layout>
-      <div className={classes['reviews']}>
+    <div className={classes['reviews']}>
+      <Layout>
         <div className={classes['reviews__items']}>
           <div className={classes['reviews__items__imgBlock']}>
             <RiDoubleQuotesR className={classes['reviews__items__imgBlock__quotes']} />
@@ -136,8 +136,8 @@ const Reviews = () => {
         <div className={classes['reviews__button']} onClick={() => newData()}>
           <UIButton buttonText={'Отправить'} />
         </div>
-      </div>
-    </Layout>
+      </Layout>
+    </div>
   );
 };
 

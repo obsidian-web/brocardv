@@ -1,16 +1,17 @@
 @import './variables';
 
 .statistics {
-  
   display: flex;
   background-color: $light-gray;
   justify-content: space-around;
-  
+&__item{
+  display: flex;
+  justify-content: space-around;  
+  width: 100vw;
+}
   &__left {
     text-align: center;
-    &__img {
-      margin-top: 100px;
-    }
+    width: 700px;
     &__title {
       font-family: 'Exo 2', sans-serif;
       font-style: normal;
@@ -31,13 +32,16 @@
       letter-spacing: 0.03em;
       margin-top: 40px;
       width: 594px;
-      margin-left: 100px;
     }
     &__button {
-      width: 800px;
-      padding-top: 50px;
+      width: 900px;
+      padding-top: 20px;
       display: flex;
       justify-content: center;
     }
+  }
+  &__buttonBlock{
+    display: flex;
+    justify-content: center;
   }
 }
