@@ -82,3 +82,9 @@
     }
   }
 }
+@media( max-width: 720px ){
+  .footer{
+    
+    width: calc(660px + (600 - 400) * ((100vw - 320px) / (1500 - 320)));
+  }
+}

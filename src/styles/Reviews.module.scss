@@ -163,3 +163,10 @@
     }
   }
 }
+@media(max-width: 720px){
+  .reviews{
+    &__items{
+      display: block;
+    }
+  }
+}

@@ -50,6 +50,7 @@
       background-color: $white;
       display: flex;
       border-radius: 15px;
+      
       &__info {
         width: 100%;
         &__title {
@@ -112,6 +113,32 @@
   .availability {
     &__drop {
       display: block;
+    }
+  }
+}
+@media (max-width: 720px){
+  .availability{
+    &__item{
+      &__block{
+        margin-left: 0px;
+        height: calc(250px + (750 - 375) * ((60vw - 320px) / (1500 - 320)));
+        &__img{
+          margin-top: 40px;
+        }
+        &__name{
+          display: flex;
+        }
+        &__price{
+
+        }
+        &__info{
+          &__title{
+            &__price{
+              display: block;
+            }
+          }
+        }
+      }
     }
   }
 }

@@ -100,10 +100,10 @@ const Availability = (props: any) => {
                 </div>
                 <div className={classes['availability__item__block__info']}>
                   <div className={classes['availability__item__block__info__title__price']}>
-                    <div>
+                    <div className={classes['availability__item__block__name']}>
                       {item.brand} {item.model}, {item.year}
                     </div>
-                    <div>{item.price}Р</div>
+                    <div className={classes['availability__item__block__price']}>{item.price}Р</div>
                   </div>
                   <div className={classes['availability__item__block__info__volume']}>
                     Объем: <p>{item.volume}</p>

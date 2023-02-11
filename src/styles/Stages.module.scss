@@ -172,3 +172,20 @@
     }
   }
 }
+@media(max-width: 720px){
+  .stages{
+    height: calc(1775px + (750 - 375) * ((100vw - 320px) / (1500 - 320)));   
+    width: calc(652px + (600 - 400) * ((100vw - 320px) / (1500 - 320)));
+    &__numbersBlock{
+      &__number{
+        width: 295px;
+      }
+    }
+    &__cardsBlock{
+      &__img{
+        margin-left: -170px;
+        margin-top: -350px;
+      }
+    }
+  }
+}

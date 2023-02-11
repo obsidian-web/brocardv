@@ -66,7 +66,7 @@ const Slider = (props: any) => {
               {SliderData[index].title}
             </motion.div>
             <div className={classes['slider__item']} >
-              <div className={classes['slider__item__left']}>
+              <div className={classes['slider__item__left']}>                
                 <div className={classes['slider__item__imgTitle']}>
                   <div className={classes['slider__item__imgTitle__numb']}>01</div>
                   <motion.div
@@ -86,6 +86,7 @@ const Slider = (props: any) => {
                     initial={{ opacity: 0, scale: 0.5 }}>
                   {SliderData[index].items[0].text}
                 </motion.div>
+                <div className={classes['slider__item__block']}>
                 <div className={classes['slider__item__imgTitle']}>
                   <div className={classes['slider__item__imgTitle__numb']}>02</div>
                   <motion.div
@@ -105,6 +106,7 @@ const Slider = (props: any) => {
                     initial={{ opacity: 0, scale: 0.5 }}>
                   {SliderData[index].items[1].text}
                 </motion.div>
+              </div>
               </div>
               <div className={classes['slider__item__img']}>
                 <div className={classes['slider__item__img__sliderTruck']}>
@@ -134,6 +136,7 @@ const Slider = (props: any) => {
                     initial={{ opacity: 0, scale: 0.5 }}>
                   {SliderData[index].items[2].text}
                 </motion.div>
+                <div className={classes['slider__item__block']}>
                 <div className={classes['slider__item__imgTitle']}>
                   <div className={classes['slider__item__imgTitle__numb']}>04</div>
                   <motion.div
@@ -145,14 +148,16 @@ const Slider = (props: any) => {
                     {SliderData[index].items[3].title}
                   </motion.div>
                 </div>
+                
                 <motion.div
-                    className={classes['slider__item__text__final']}
+                    className={classes['slider__item__text']}
                     key={Math.random()}
                     exit={{ opacity: 0, scale: 0.5 }}
                     animate={controls}
                     initial={{ opacity: 0, scale: 0.5 }}>
                   {SliderData[index].items[3].text}
                 </motion.div>
+                </div>
               </div>
             </div>
             <div className={classes['slider__button']}>

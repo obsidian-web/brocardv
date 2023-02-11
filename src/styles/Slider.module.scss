@@ -112,3 +112,27 @@
     }
   }
 }
+@media(max-width: 720px){
+  .slider{
+    width: calc(650px + (600 - 400) * ((100vw - 320px) / (1500 - 320)));
+    &__item{
+      &__block{
+        transform: translateX(250px);
+      }
+      &__left{
+        
+      }
+      &__img{
+        display: none;
+      }
+    }
+    &__page{
+      transform: translateY(-1400px);
+      font-size: 40px;
+      &__arrow{
+        font-size: 50px;
+        
+      }
+    }
+  }
+}
