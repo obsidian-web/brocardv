@@ -84,7 +84,15 @@
 }
 @media( max-width: 720px ){
   .footer{
-    
     width: calc(660px + (600 - 400) * ((100vw - 320px) / (1500 - 320)));
+  }
+}
+@media( max-width: 360px ){
+  .footer{
+    width: calc(350px + (600 - 400) * ((100vw - 320px) / (1500 - 320)));
+    height: calc(150px + (750 - 375) * ((100vw - 320px) / (1500 - 320)));
+    &__item{
+      display: block;
+    }
   }
 }

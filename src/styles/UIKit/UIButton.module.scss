@@ -24,3 +24,8 @@
 .UIButton:active{
     background-color: $black
 }
+@media(max-width: 360px){
+    .UIButton{
+        font-size: 20px;
+    }   
+}

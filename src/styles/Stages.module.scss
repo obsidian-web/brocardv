@@ -182,9 +182,34 @@
       }
     }
     &__cardsBlock{
+      
       &__img{
-        margin-left: -170px;
+        margin-left: -200px;
         margin-top: -350px;
+        
+      }
+    }
+  }
+}
+@media(max-width: 360px){
+  .stages{
+    width: calc(352px + (600 - 400) * ((100vw - 320px) / (1500 - 320)));
+    height: calc(2375px + (750 - 375) * ((100vw - 320px) / (1500 - 320)));   
+    &__title{
+      font-size: 35px;
+    }
+    &__cardsBlock{
+      &__left{
+        width: 300px;
+        height: 450px;
+        margin-bottom: 50px;
+      }
+      &__right{
+        width: 300px;
+        margin-left: 20px;
+      }
+      &__img{
+        display: none;
       }
     }
   }

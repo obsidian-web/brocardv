@@ -3,28 +3,41 @@
   font-size: 20px;
   background-size: contain;
 }
-  .brocardvLine__info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 18px 0;
-    &__logo {
-      font-family: 'Exo 2', sans-serif;
-      //padding: 12px 0 0 100px;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 20px;
-      //line-height: 24px;
-      color: $white;
-    }
-    &__text {
-      font-family: 'Exo 2';
-      font-style: normal;
-      font-weight: 600;
-      font-size: 20px;
-      //line-height: 24px;
-      color: $white;
-      //padding: 12px 100px 0 0;
+.brocardvLine__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+  &__logo {
+    font-family: 'Exo 2', sans-serif;
+    //padding: 12px 0 0 100px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    //line-height: 24px;
+    color: $white;
+  }
+  &__text {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    //line-height: 24px;
+    color: $white;
+    //padding: 12px 100px 0 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .brocardvLine {
+    &__info{
+      &__logo{
+        font-size: 15px;
+      }
+      &__text{
+        font-size: 15px;
+        margin-left: 20px;
+      }
     }
   }
-
+}

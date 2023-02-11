@@ -70,7 +70,7 @@ const Header = (props: any) => {
         <div className={classes['header']}>
           <div className={classes['logo']}>
             <div className={classes['logo__png']}>
-              <img src="logoAuto.png" alt="auto" />
+              <img className={classes['logo__png__icon']} src="logoAuto.png" alt="auto" />
             </div>
             <div className={classes['logo__text']}>
               <div className={classes['logo__title']}>Автомобили под заказ</div>

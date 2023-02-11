@@ -103,7 +103,7 @@
 }
 @media(max-width: 720px){
   .contacts{
-    height: calc(1100px + (750 - 375) * ((60vw - 320px) / (1500 - 320)));
+    height: calc(900px + (750 - 375) * ((60vw - 320px) / (1500 - 320)));
     &__item{
       display: block;
       &__address{

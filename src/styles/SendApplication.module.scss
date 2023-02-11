@@ -72,3 +72,11 @@
     }
   }
 }
+@media(max-width: 360px){
+  .sendApplication {
+    
+    &__item {
+        width: 400px;
+    }
+  } 
+}

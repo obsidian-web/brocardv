@@ -20,15 +20,28 @@
 }
 @media (max-width: 1024px){
   .map{
-    width: calc(900px + (600 - 400) * ((100vw - 320px) / (1500 - 320)));
+    width: calc(800px + (600 - 400) * ((100vw - 320px) / (1500 - 320)));
     &__item{
-      width: 90%;
+      width: 80%;
     }
   } 
 }
 @media (max-width: 720px){
   .map{
     height: calc(600px + (750 - 375) * ((100vw - 320px) / (1500 - 320)));
-    width: calc(550px + (600 - 400) * ((100vw - 320px) / (1500 - 320)));
+    width: calc(200px + (600 - 400) * ((100vw - 320px) / (1500 - 320)));
+    &__item{
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 360px){
+  .map{
+    width: calc(300px + (600 - 400) * ((100vw - 320px) / (1500 - 320)));
+    
+    &__item{
+      width: 400px;
+      height: 300px;
+    }
   }
 }

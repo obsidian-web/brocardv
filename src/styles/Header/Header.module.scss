@@ -114,6 +114,30 @@
 @media (max-width: 720px) {
   .header {
     height: calc(100px + (750 - 375) * ((60vw - 320px) / (1500 - 320)));
-    width: calc(650px + (600 - 400) * ((100vw - 320px) / (1500 - 320)));
+    width: calc(755px + (600 - 400) * ((100vw - 320px) / (1500 - 320)));
+  }
+}
+@media (max-width: 360px) {
+  .header {
+    height: calc(250px + (750 - 375) * ((60vw - 320px) / (1500 - 320)));
+    width: calc(355px + (600 - 400) * ((100vw - 320px) / (1500 - 320)));
+    display: block;
+  }
+  .logo {
+    &__png{
+      &__icon{
+        
+      }
+    }
+  }
+  .menu{
+    &__main{
+      &__mobile{
+        margin-left: 20px;
+      }
+    }
+  }
+  .number{
+    margin-right: 40px;
   }
 }

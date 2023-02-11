@@ -87,3 +87,10 @@
     }
   }
 }
+@media(max-width: 360px){
+  .MobileNav{
+    &__content{
+      width: 500px;
+    }
+  } 
+}

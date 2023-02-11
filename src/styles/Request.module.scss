@@ -58,3 +58,11 @@
     justify-content: center;
   }
 }
+@media (max-width: 360px){
+  .request{
+    height: calc(600px + (750 - 375) * ((60vw - 320px) / (1500 - 320)));
+    &__inputBlock{
+      display: block;
+    }
+  } 
+}

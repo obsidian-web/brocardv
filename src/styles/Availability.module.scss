@@ -4,7 +4,7 @@
   background-color: $light-gray;
   padding-bottom: 200px;
   background-size: cover;
-  &__pagination{
+  &__pagination {
     cursor: pointer;
     float: right;
     display: flex;
@@ -15,11 +15,11 @@
     font-size: 36px;
     line-height: 44px;
     margin-top: 50px;
-    &__itemActive{
+    &__itemActive {
       color: $red;
       margin-right: 20px;
     }
-    &__item{
+    &__item {
       color: $black;
       margin-right: 20px;
     }
@@ -31,11 +31,10 @@
     font-size: 48px;
     line-height: 56px;
     letter-spacing: 0.03em;
-    
   }
   &__drop {
     display: flex;
-    
+
     &__down {
       margin-left: 40px;
       margin-top: 30px;
@@ -50,7 +49,7 @@
       background-color: $white;
       display: flex;
       border-radius: 15px;
-      
+
       &__info {
         width: 100%;
         &__title {
@@ -109,33 +108,67 @@
   }
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
   .availability {
     &__drop {
       display: block;
     }
   }
 }
-@media (max-width: 720px){
-  .availability{
-    &__item{
-      &__block{
+@media (max-width: 720px) {
+  .availability {
+    &__item {
+      &__block {
         margin-left: 0px;
         height: calc(250px + (750 - 375) * ((60vw - 320px) / (1500 - 320)));
-        &__img{
+        &__img {
           margin-top: 40px;
         }
-        &__name{
+        &__name {
           display: flex;
         }
-        &__price{
-
+        &__price {
+        }
+        &__info {
+          &__title {
+            &__price {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media(max-width: 360px){
+  .availability{
+    &__drop{
+      &__down{
+        margin-left: 0px;
+      }
+    }
+    &__item{
+      &__block{
+        &__img{
+          &__theImg{
+            width: 50px;
+            height: 50px;
+          }
         }
         &__info{
           &__title{
             &__price{
-              display: block;
+              font-size: 20px;
             }
+          }
+          &__volume{
+            margin-top: 0px;
+          }
+          &__drive{
+            margin-top: 0px;
+          }
+          &__mileage{
+            margin-top: 0px;
           }
         }
       }

@@ -54,3 +54,21 @@
     height: calc(750px + (750 - 375) * ((60vw - 320px) / (1500 - 320)));
   }
 }
+@media(max-width: 360px){
+  .main{
+    &__info{
+      left: 20px;
+      &__title{
+        width: 100%;
+        font-size: 30px;
+        &__button{
+          margin-top: 10px;
+          
+        }
+      }
+      &__static{
+        top: 400px;
+      }
+    }
+  }
+}

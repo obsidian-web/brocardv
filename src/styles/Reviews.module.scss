@@ -170,3 +170,30 @@
     }
   }
 }
+@media(max-width: 360px){
+  .reviews{
+    &__items{
+      width: calc(350px + (600 - 400) * ((100vw - 320px) / (1500 - 320)));
+      &__imgBlock{
+        
+        width: 300px;
+      }
+      &__reviewsBlock{
+        width: 250px;
+        &__subTitle{
+          width: 300px;
+          font-size: 20px;
+        }
+      }
+    }
+    &__pagination{
+      margin-top: 20px;
+    }
+    &__feedback{
+      margin-top: 20px;
+      &__textarea{
+        margin-left: 10px;
+      }
+    }
+  }
+}

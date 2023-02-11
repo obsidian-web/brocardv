@@ -96,7 +96,7 @@ const Availability = (props: any) => {
             <>
               <div className={classes['availability__item__block']}>
                 <div className={classes['availability__item__block__img']}>
-                  <img src="skyline.png" alt="png" />
+                  <img className={classes['availability__item__block__img__theImg']} src="skyline.png" alt="png" />
                 </div>
                 <div className={classes['availability__item__block__info']}>
                   <div className={classes['availability__item__block__info__title__price']}>
