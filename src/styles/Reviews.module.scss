@@ -163,6 +163,15 @@
     }
   }
 }
+@media(max-width: 1024px){
+  .reviews{
+    &__items{
+      &__reviewsBlock{
+        margin-left: 20px;
+      }
+    }
+  }
+}
 @media(max-width: 720px){
   .reviews{
     &__items{
@@ -194,6 +203,9 @@
       &__textarea{
         margin-left: 10px;
       }
+    }
+    &__button{
+      width: 300px;
     }
   }
 }

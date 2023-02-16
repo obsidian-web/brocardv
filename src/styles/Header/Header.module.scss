@@ -90,7 +90,7 @@
 }
 @media (max-width: 1024px) {
   .header {
-    width: calc(905px + (600 - 400) * ((100vw - 320px) / (1500 - 320)));
+    
     height: calc(10px + (750 - 375) * ((60vw - 320px) / (1500 - 320)));
   }
 
@@ -114,8 +114,18 @@
 @media (max-width: 720px) {
   .header {
     height: calc(100px + (750 - 375) * ((60vw - 320px) / (1500 - 320)));
-    width: calc(755px + (600 - 400) * ((100vw - 320px) / (1500 - 320)));
+    
+    
   }
+  .logo{
+    &__title{
+      font-size: 20px;
+    }
+    &__subtitle{
+      font-size: 30px;
+    }
+  }
+  
 }
 @media (max-width: 360px) {
   .header {

@@ -76,7 +76,19 @@
   .sendApplication {
     
     &__item {
-        width: 400px;
+        width: 350px;
+        &__info{
+          &__subTitle{
+            font-size: 15px;
+          }
+          &__UIBlock{
+            padding-left: 0px;
+            
+          }
+          &__button{
+            width: 200px;
+          }
+        }
     }
   } 
 }
